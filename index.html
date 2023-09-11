@@ -4,26 +4,34 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <link rel="stylesheet" href="./style.css" />
         <title>Calculadora de Hidratación Basal</title>
+        <script src="./script.js" defer></script>
     </head>
     <body>
         <div id="contenedor">
             <div id="calculadora">
                 <div class="contenido">
                     <h1>Hidratación Basal</h1>
-                    <input type="number" placeholder="Peso en Kg." />
-                    <p>* Debe completar todos los datos.</p>
-                    <button>Calcular</button>
-                    <p>71cc/h</p>
-                    <p>m+m/2 : 105cc/h</p>
+                    <p class="item">Completa todos los datos</p>
+                    <input type="number" id="peso" placeholder="Peso en Kg." />
+                    <p class="item resultado" id="error">* Debe completar todos los datos.</p> 
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="item resultado" id="flu"></p>
+                    <p class="item resultado" id="man"></p>
                 </div>
             </div>
             <div id="detalle">
                 <div class="contenido">
-                    <h1>¿Cómo se calcula?</h1>
-                    <ul>    
-                        <li>De 0Kg a 10Kg, se calcula 100cc por cada kilogramo.</li>
-                        <li>Se suma 50cc por cada kilogramo de peso por arriba de 10Kg, hasta 20Kg.</li>
-                        <li>De 20Kg para arriba, se suman 20cc por cada Kilogramo adicional.</li>
+                    <h1 id="titulo">¿Cómo se calcula?</h1> 
+                    <h2 id="metodo">Existen dos métodos, Holliday-Segar y de Volumen Corporal </h2>
+
+                    <ul id="Holliday">    
+                        <li >De 0Kg a 10Kg, se calcula 100cc por cada kilogramo.</li> <br />
+                        <li >Se suma 50cc por cada kilogramo de peso por arriba de 10Kg, hasta 20Kg.</li> <br />
+                        <li >De 20Kg para arriba, se suman 20cc por cada Kilogramo adicional.</li> <br />
+                    </ul>
+                    <ul id="vc">    
+                        <li >El médico decide cuál de los resultados utilizar.</li> <br />
+                        <li >Se presentan dos volumenes diarios según las fórmulas otorgadas.</li> <br />
                     </ul>
                 </div>
             </div>
