@@ -1,315 +1,34 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restraunt</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-container container">
-          <input type="checkbox" name="" id="">
-          <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-              <li><a href="#home">Principal</a></li>
-              <li><a href="#about">Acerca de</a></li>
-              <li><a href="#food">Productos</a></li>
-              <li><a href="#food-menu">Marcas</a></li>
-              <li><a href="#testimonials">Clientes</a></li>
-              <li><a href="#contact">Contacto</a></li>
-          </ul>
-          <h1 class="logo">AV</h1>
-      </div>
-  </nav>
-    <section class="showcase-area" id="showcase">
-      <div class="showcase-container">
-        <h1 class="main-title" id="home">Alpa vapea</h1>
-        <p>Deja el pucho, vapea.</p>
-        <a href="#food-menu" class="btn btn-primary">Menu</a>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="about-wrapper container">
-        <div class="about-text">
-          <p class="small">Acerca de</p>
-          <h2>Vapeando desde el 2019</h2>
-          <p>
-            En Alpa Vape, hemos estado sirviendo a la comunidad de vapeadores 
-            en nuestra hermosa ciudad de Encarnación desde el año 2019. Somos apasionados 
-            acerca de ofrecer a nuestros clientes una experiencia excepcional en el mundo 
-            del vapeo, brindando una amplia gama de productos de alta calidad y un servicio excepcional al mejor 
-            precio del merccdo.
-          </p>
-        </div>
-        <div class="about-img">
-          <img src="https://i.postimg.cc/Zqbbf8Ng/LOGO-ALPA-VAPE-1.jpg" alt="food" />
-        </div>
-      </div>
-    </section>
-    <section id="food">
-      <h2>Productos</h2>
-      <div class="food-container container">
-        <div class="food-type fruite">
-          <div class="img-container">
-            <img src="https://i.postimg.cc/4ybDYjYL/podsvarios.jpg" alt="error" />
-            <div class="img-content">
-              <h3>Vapeadores</h3>
-              <a
-                href="https://en.wikipedia.org/wiki/Fruit"
-                class="btn btn-primary"
-                target="blank"
-                >Ver modelos</a
-              >
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Calculadora de Hidratación Basal</title>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>Hidratación Basal</h1>
+                    <p class="item">Completa todos los datos</p>
+                    <input type="number" id="peso" placeholder="Peso en Kg." />
+                    <p class="item resultado" id="error">* Debe completar todos los datos.</p> 
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="item resultado" id="flu">71cc/h</p>
+                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="food-type vegetable">
-          <div class="img-container">
-            <img src="https://i.postimg.cc/9fVxDjN3/pods.png" alt="error" />
-            <div class="img-content">
-              <h3>Pod System</h3>
-              <a
-                href="https://en.wikipedia.org/wiki/Vegetable"
-                class="btn btn-primary"
-                target="blank"
-                >Ver modelos</a
-              >
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>¿Cómo se calcula?</h1> 
+                    <ul>    
+                        <li>De 0Kg a 10Kg, se calcula 100cc por cada kilogramo.</li> <br />
+                        <li>Se suma 50cc por cada kilogramo de peso por arriba de 10Kg, hasta 20Kg.</li> <br />
+                        <li>De 20Kg para arriba, se suman 20cc por cada Kilogramo adicional.</li> <br />
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="food-type grin">
-          <div class="img-container">
-            <img src="https://i.postimg.cc/1zCb6p5S/deathrow.jpg" alt="error" />
-            <div class="img-content">
-              <h3>Descartables</h3>
-              <a
-                href="https://en.wikipedia.org/wiki/Grain"
-                class="btn btn-primary"
-                target="blank"
-                >Ver modelos</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="food-menu">
-      <h2 class="food-menu-heading">Marcas</h2>
-      <div class="food-menu-container container">
-        <div class="food-menu-item">
-          <div class="food-img">
-            <img src="https://i.postimg.cc/fbF7dvpY/nasty2.png" alt="" />
-          </div>
-          <div class="food-description">
-            <h2 class="food-titile">Nasty</h2>
-            <p>
-            Fundada en el año 2015 en Tampin, Malaysia.
-            </p>
-            <p class="food-price">Precio: desde Gs. 75.000</p>
-          </div>
-        </div>
-
-        <div class="food-menu-item">
-          <div class="food-img">
-            <img
-              src="https://i.postimg.cc/3wp6dWbr/drv.png"
-              alt="error"
-            />
-          </div>
-          <div class="food-description">
-            <h2 class="food-titile">Death Row Vapes</h2>
-            <p>
-              Linea de descartables del rapero Snoop Dogg.
-            </p>
-            <p class="food-price">Precio: desde Gs. 100.000</p>
-          </div>
-        </div>
-        <div class="food-menu-item">
-          <div class="food-img">
-            <img src="https://i.postimg.cc/zfT7mGj9/voopoo-logo2.png" alt="" />
-          </div>
-          <div class="food-description">
-            <h2 class="food-titile">Voopoo</h2>
-            <p>
-              Marca lider en el desarrollo de sistemas de vapeo.
-            </p>
-            <p class="food-price">Precio: desde Gs. 50.000</p>
-          </div>
-        </div>
-        <div class="food-menu-item">
-          <div class="food-img">
-            <img src="https://i.postimg.cc/PqRWsMMP/ignitelogo.png" alt="" />
-          </div>
-          <div class="food-description">
-            <h2 class="food-titile">Ignite</h2>
-            <p>
-                Linea de descartables de Dan Bilzerian.
-            </p>
-            <p class="food-price">Precio: desde Gs. 250</p>
-          </div>
-        </div>
-        <div class="food-menu-item">
-          <div class="food-img">
-            <img src="https://i.postimg.cc/5Nr7z02C/hypnos-negro.png" alt="" />
-          </div>
-          <div class="food-description">
-            <h2 class="food-titile">Hypnos</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-              quae.
-            </p>
-            <p class="food-price">Precio: desde Gs. 250</p>
-          </div>
-        </div>
-        <div class="food-menu-item">
-          <div class="food-img">
-            <img src="https://i.postimg.cc/fLRZLKCs/vaporesso-logo-01.png" alt="" />
-          </div>
-          <div class="food-description">
-            <h2 class="food-titile">Vaporesso</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-              quae.
-            </p>
-            <p class="food-price">Precio: desde Gs. 250</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="testimonials">
-      <h2 class="testimonial-title">Staff</h2>
-      <div class="testimonial-container container">
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
-              <p class="customer-name">Ross Lee</p>
-            </div>
-          </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-            voluptas cupiditate aspernatur odit doloribus non.
-          </p>
-         
-        </div>
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img
-                src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg"
-                alt=""
-              />
-              <p class="customer-name">Amelia Watson</p>
-            </div>
-          </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-            voluptas cupiditate aspernatur odit doloribus non.
-          </p>
-         
-        </div>
-        <div class="testimonial-box">
-          <div class="customer-detail">
-            <div class="customer-photo">
-              <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
-              <p class="customer-name">Ben Roy</p>
-            </div>
-          </div>
-          <div class="star-rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <p class="testimonial-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-            voluptas cupiditate aspernatur odit doloribus non.
-          </p>
-         
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="contact-container container">
-        <div class="contact-img">
-          <img src="https://i.postimg.cc/QCNZ9PCd/fc4499-vapeador.jpg" alt="" />
-        </div>
-
-        <div class="form-container">
-          <h2>Contactanos</h2>
-          <input type="text" placeholder="Tu nombre" />
-          <input type="email" placeholder="E-Mail" />
-          <textarea
-            cols="30"
-            rows="6"
-            placeholder="Tu mensaje"
-          ></textarea>
-          <a href="#" class="btn btn-primary">Enviar</a>
-        </div>
-      </div>
-    </section>
-    <footer id="footer">
-      <h2>Restraunt &copy; all rights reserved</h2>
-    </footer>
-  </body>
-  <!-- 
-    .................../ JS Code for smooth scrolling /...................... -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on("click", function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            }
-          );
-        } // End if
-      });
-    });
-  </script>
+    </body>
 </html>

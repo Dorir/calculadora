@@ -1,0 +1,26 @@
+iniciar
+	leer peso
+	peso = redondear peso
+	si peso <= 10 entonces
+		hidratación = 100*peso
+	o si peso > 10 y <= 20
+		hidratacion = 1000 + 50*(peso-10)
+	o si peso > 20 y <= 30
+		hidratacion = 1500 + 20*(peso-20)
+	o si peso > 30
+		hidratacion = ( (peso * 4) + 7) / (peso + 90)
+	fin si
+	
+	si peso <= 30
+		imprimir "Se ha utilizado el método Holliday-Segar"
+		flujo = hidratacion /24
+		mantenimiento = flujo*1.5		
+		imprimir "flujo"
+	else if peso > 30
+		imprimir "Se ha utilizado el método de Superficie Corporal"
+		hid1 = hidratacion * 1500 / 24
+		hid2 = hidratacion * 2000 / 24
+		imprimir "Superficie corporal 1" hid1
+		imprimir "Superficie corporal 2" hid2
+
+fin
